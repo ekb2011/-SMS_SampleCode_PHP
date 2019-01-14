@@ -1,9 +1,9 @@
 <?php
 	//url, appKeys, requestId, and type for calling REST API
 	$url="https://api-sms.cloud.toast.com/sms/v2.1";
-	$appKeys="/appKeys/EGAHwbWtW692uzLs";
+	$appKeys="/appKeys/{appkey}";
 	$type="/sender/auth/sms";
-	$requestId="?requestId=20190102160752oGzvOJqTUK3";
+	$requestId="?requestId={requestId}";
 	
 	//setting a header
 	$headers=array(

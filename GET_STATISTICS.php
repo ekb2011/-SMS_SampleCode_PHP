@@ -1,7 +1,7 @@
 <?php
 	//url, appKeys, requestId, and type for calling REST API
 	$url="https://api-sms.cloud.toast.com/sms/v2.1";
-	$appKeys="/appKeys/EGAHwbWtW692uzLs";
+	$appKeys="/appKeys/{appkey}";
 	$type="/statistics/view";
 	$query="?searchType=DATE";
 	

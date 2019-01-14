@@ -1,7 +1,7 @@
 <?php
 	//url, appKeys, requestId, and type for calling REST API
 	$url="https://api-sms.cloud.toast.com/sms/v2.1";
-	$appKeys="/appKeys/EGAHwbWtW692uzLs";
+	$appKeys="/appKeys/{appkey}";
 	$type="/reservations/cancel";
 	
 	//setting a header
@@ -15,7 +15,7 @@
 				"requestId"=>"20190102182000cGZ31lKeSz0",
 				"recipientSeq"=>1
 			)],
-			"updateUser"=>"gibonglim"
+			"updateUser"=>""
 	);
 	
 	//prepare REST API call

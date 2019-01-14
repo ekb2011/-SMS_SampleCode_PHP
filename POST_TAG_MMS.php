@@ -1,7 +1,7 @@
 <?php
 	//url, appKeys, requestId, and type for calling REST API
 	$url="https://api-sms.cloud.toast.com/sms/v2.1";
-	$appKeys="/appKeys/EGAHwbWtW692uzLs";
+	$appKeys="/appKeys/{appkey}";
 	$type="/tag-sender/mms";
 	
 	//setting a header
@@ -13,10 +13,10 @@
 	$requestBody=array(
 			"title"=>"Tag Test Title",
 			"body"=>"Tag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\nTag Test\n",
-			"sendNo"=>"01041002071",
+			"sendNo"=>"",
 			"senderGroupingKey"=>"SenderGroupingKey",
 			"recipientList"=>[array(
-				"recipientNo"=>"01041002071",
+				"recipientNo"=>"",
 				"recipientGroupingKey"=>"RecipientGroupingKey"
 			)],
 			"tagExpression"=>["aKYyaCa0",

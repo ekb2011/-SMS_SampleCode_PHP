@@ -1,7 +1,7 @@
 <?php
 	//url, appKeys, requestId, and type for calling REST API
 	$url="https://api-sms.cloud.toast.com/sms/v2.1";
-	$appKeys="/appKeys/EGAHwbWtW692uzLs";
+	$appKeys="/appKeys/{appkey}";
 	$type="/sender/mms";
 	
 	//setting a header
@@ -13,11 +13,11 @@
 	$requestBody=array(
 			"title"=>"Title: PHP Test MMS",
 			"body"=>"PHP Test by REST API\nPHP Test by REST API\nPHP Test by REST API\nPHP Test by REST API\nPHP Test by REST API\nPHP Test by REST API\nPHP Test by REST API\nPHP Test by REST API\nPHP Test by REST API\n",
-			"sendNo"=>"01041002071",
+			"sendNo"=>"",
 			"senderGroupingKey"=>"SenderGroupingKey",
 			"attachFileIdList"=>[307917],
 			"recipientList"=>[array(
-				"recipientNo"=>"01041002071",
+				"recipientNo"=>"",
 				"recipientGroupingKey"=>"RecipientGroupingKey"
 			)]
 	);

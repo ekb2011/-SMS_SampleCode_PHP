@@ -1,10 +1,11 @@
 <?php
+	//When Using Guzzle Framework
 	//import Guzzle Framework - autoload.php
 	require "..\\..\\..\\php\\vendor\\autoload.php";
 
 	//url, appKeys, requestId, and type for calling REST API
 	$url="https://api-sms.cloud.toast.com/sms/v2.1";
-	$appKeys="/appKeys/EGAHwbWtW692uzLs";
+	$appKeys="/appKeys/{appkey}";
 	$type="/reservations/cancel";
 	
 	//setting a header
@@ -15,7 +16,7 @@
 	//making a requestBody
 	$requestBody=array(
 			"reservationList"=>[array(
-				"requestId"=>"20190103163000QYjXrb6wdI0",
+				"requestId"=>"{requestId}",
 				"recipientSeq"=>1
 			)],
 			"updateUser"=>"gibonglim"

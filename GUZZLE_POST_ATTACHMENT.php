@@ -1,4 +1,5 @@
 <?php
+	//When Using Guzzle Framework
 	//import Guzzle Framework - autoload.php
 	require "..\\..\\..\\php\\vendor\\autoload.php";
 	
@@ -8,7 +9,7 @@
 	}
 	//url, appKeys, requestId, and type for calling REST API
 	$url="https://api-sms.cloud.toast.com/sms/v2.1";
-	$appKeys="/appKeys/EGAHwbWtW692uzLs";
+	$appKeys="/appKeys/{appkey}";
 	$type="/attachfile/binaryUpload";
 	
 	//setting a header
@@ -17,7 +18,7 @@
 	);
 	
 	//making a requestBody
-	$pathToUpload="C:\\Users\\NHNEnt\\Desktop\\testFile.jpg";
+	$pathToUpload="C:\\..";
 	
 	$requestBody=array(
 			"fileName"=>"testFile.jpg",

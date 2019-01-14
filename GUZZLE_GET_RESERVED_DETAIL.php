@@ -1,12 +1,13 @@
 <?php
+	//When Using Guzzle Framework
 	//import Guzzle Framework - autoload.php
 	require "..\\..\\..\\php\\vendor\\autoload.php";
 
 	//url, appKeys, requestId, and type for calling REST API
 	$url="https://api-sms.cloud.toast.com/sms/v2.1";
-	$appKeys="/appKeys/EGAHwbWtW692uzLs";
+	$appKeys="/appKeys/{appkey}";
 	$type="/reservations";
-	$parameter="/20181205125400wYScCPkj190/1"; //requestId & recipientSeq
+	$parameter="/{requestId}/{recipientSeq}"; //requestId & recipientSeq
 	//setting a header
 	$headers=array(
 		'Content-Type: application/json;charset=UTF-8'

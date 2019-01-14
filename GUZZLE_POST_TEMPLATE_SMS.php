@@ -1,10 +1,11 @@
 <?php
+	//When Using Guzzle Framework
 	//import Guzzle Framework - autoload.php
 	require "..\\..\\..\\php\\vendor\\autoload.php";
 
 	//url, appKeys, requestId, and type for calling REST API
 	$url="https://api-sms.cloud.toast.com/sms/v2.1";
-	$appKeys="/appKeys/EGAHwbWtW692uzLs";
+	$appKeys="/appKeys/{appkey}";
 	$type="/sender/sms";
 	
 	//setting a header
@@ -15,11 +16,11 @@
 	//making a requestBody
 	$requestBody=array(
 			
-			"sendNo"=>"01041002071",
+			"sendNo"=>"",
 			"senderGroupingKey"=>"SenderGroupingKey",
 			"templateId"=>"testId",
 			"recipientList"=>[array(
-				"recipientNo"=>"01041002071",
+				"recipientNo"=>"",
 				"templateParameter"=>array(
 					"name"=>"gibonglim"
 				),
